@@ -44,7 +44,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 350px;
+    gap: 100px;
 }
 
 nav ul li a {
@@ -78,6 +78,8 @@ main h1 {
     color: #34495e;
     font-size: 1.8rem;
 }
+
+
 
 /* Artículos (proyectos) */
 article {
