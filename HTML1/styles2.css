@@ -1,6 +1,9 @@
 body { 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	height: 100vh;
- 	 margin: 0;
+ 	margin: 0;
   	background: linear-gradient(270deg, #663a04, #772a13, #150d04);
   	background-size: 600% 600%;
   	animation: moverFondo 10s ease infinite;
@@ -49,6 +52,7 @@ body {
 }
 
 .contenedor header{
+	text-align: center;
 	margin-top: 20px;
 	padding: 20px;
   	border-top: 3px solid orange;
@@ -77,7 +81,7 @@ nav a {
   padding: 10px 20px;
   position: relative;
   overflow: hidden;       /* oculta lo que sobresale */
-  border-radius: 5px;
+  border-radius: 50%;
   transition: color 0.3s;
 }
 
@@ -122,23 +126,23 @@ nav a:hover {
 	width: 40em;
 	margin: 0 0 0 -20em;
     span {
-  	font: 700 4em/1 "Oswald", sans-serif;
-  	letter-spacing: 0;
-  	padding: .25em 0 .325em;
-	  display: block;
-	  margin: 0 auto;
-  	text-shadow: 0 0 80px rgba(255,255,255,.5);
-	/* Clip Background Image */
-	  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
-	  -webkit-background-clip: text;
-	  background-clip: text;
-	/* Animate Background Image */
-	  -webkit-text-fill-color: transparent;
-	  -webkit-animation: aitf 80s linear infinite;
-	/* Activate hardware acceleration for smoother animations */
-	  -webkit-transform: translate3d(0,0,0);
-	  -webkit-backface-visibility: hidden;
-  }
+  		font: 700 4em/1 "Oswald", sans-serif;
+  		letter-spacing: 0;
+  		padding: .25em 0 .325em;
+	  	display: block;
+	  	margin: 0 auto;
+  		text-shadow: 0 0 80px rgba(255,255,255,.5);
+		/* Clip Background Image */
+	  	background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+	  	-webkit-background-clip: text;
+	  	background-clip: text;
+		/* Animate Background Image */
+	  	-webkit-text-fill-color: transparent;
+	  	-webkit-animation: aitf 80s linear infinite;
+		/* Activate hardware acceleration for smoother animations */
+	  	-webkit-transform: translate3d(0,0,0);
+	  	-webkit-backface-visibility: hidden;
+  	}
 }
 /* Animate Background Image */
 @-webkit-keyframes aitf {
@@ -170,6 +174,8 @@ main .parte-1:hover{
 }
 
 .parte-1{
+	margin-left: 25px;
+	margin-right: 25px;
 	border-radius: 8px;
 	margin-top: 20px;
 	border: 1px solid white;
@@ -181,7 +187,6 @@ main .parte-1:hover{
 .cuadro{
 	margin-left: 25px;
 	margin-right: 25px;
-	margin-top: 25px;
 	display: flex;
 	gap: 20px;
 	justify-content: center;  
@@ -224,13 +229,38 @@ main .parte-1:hover{
 footer{
     padding-bottom: 20px;
 	border-radius: 8px;
+	border: 2px solid white;
 	margin-top: 30px;
 	margin-left: 25px; margin-right: 25px;
 	margin-bottom: 20px;
-	background-color: orange;
+    background-color: transparent(82, 57, 12);
+    transition: background 0.5s ease; /* suaviza el cambio */
+}
+
+
+footer:hover {
+    background: linear-gradient(90deg, orange, rgb(180, 97, 41), yellow); 
+    box-shadow: 0 0 15px rgba(255, 165, 0, 0.8); /* brillo sutil */
 }
 
 #Ct{
+	align-items: center;
+	text-align: center;
 	padding-bottom: 25px;
 	margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .titulo {
+    width: 95%;   /* ocupa casi todo el ancho en pantallas chicas */
+  }
+
+  .cuadro section {
+    width: 100%;   /* que cada sección ocupe todo el ancho */
+  }
 }
