@@ -1,3 +1,13 @@
+/* Fondo general */
+body {
+  display: grid;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -11,16 +21,6 @@ header {
 
 .header {
 
-}
-
-/* Fondo general */
-body {
-  display: grid;
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
 }
 
 .flex h2{
