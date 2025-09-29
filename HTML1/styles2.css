@@ -1,5 +1,5 @@
 body { 
-	
+	padding: 30px;
   	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
@@ -248,10 +248,10 @@ footer:hover {
 }
 
 #Ct{
+	margin-right: 50px;
 	align-items: center;
 	text-align: center;
 	padding-bottom: 25px;
-	margin-bottom: 20px;
 }
 
 @media (max-width: 768px) {

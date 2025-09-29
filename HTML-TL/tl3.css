@@ -1,0 +1,56 @@
+/* Fondo general */
+body {
+  display: grid;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #0f172a, #1e3a8a); /* azul oscuro → indigo */
+  color: white;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(17, 24, 39, 0.9); /* bg-gray-900/90 */
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.bg-gray-900 .grid li:hover{
+  transform: scale(1.1);
+  background-color: rgba(240, 248, 255, 0.096);
+}
+
+/* Navbar */
+header nav a {
+  position: relative;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+/* Hero (h1 principal) */
+h1 {
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  color: #f5f5f5 !important;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+}
+
+/* Navbar */
+header nav a {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+header nav a:hover {
+  background: rgba(255, 255, 255, 0.701);
+}

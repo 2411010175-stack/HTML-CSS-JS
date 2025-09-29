@@ -1,3 +1,14 @@
+/* Fondo general */
+body {
+  display: grid;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #0f172a, #1e3a8a); /* azul oscuro → indigo */
+  color: white;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
 header {
   top: 0;
   left: 0;
@@ -7,6 +18,15 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
+.mx-auto{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.mt-6{
+  font-size: 15px;
+  font-family: 'Times New Roman', Times, serif;
+}
 
 /* Navbar */
 header nav a {
@@ -40,15 +60,6 @@ ul li div div h3 {
   font-size: 27px;
 }
 
-/* Fondo general */
-body {
-  display: grid;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to bottom, #0f172a, #1e3a8a); /* azul oscuro → indigo */
-  color: white;
-  margin: 0;
-  padding: 0;
-}
 
 /* Navbar */
 header nav a {
@@ -67,6 +78,15 @@ h1 {
   text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
 }
 
+header .el-dialog{
+  height: 100%;
+  width: 100%;
+}
+
+.bg-gray-900{
+  padding-top: 2%;
+  padding-bottom: 13%;
+}
 
 .bg-gray-900 .grid li h3{
   font-family: 'Times New Roman', Times, serif;
@@ -82,10 +102,6 @@ h1 {
   position: relative;
 }
 
-.bg-gray-900{
-  position: relative;
-  margin-top: 102px;
-}
 
 .bg-gray-900 .grid{
   gap: 50px 80px;
@@ -130,9 +146,5 @@ h1 {
   .flex h2 {
     font-size: 20px;
     padding-left: 10px;
-  }
-
-  body {
-    padding: 10px;
   }
 }
