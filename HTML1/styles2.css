@@ -256,26 +256,43 @@ footer:hover {
 
 @media (max-width: 768px) {
 
+  body {
+    padding: 15px;            /* más respiro */
+    overflow-x: hidden;       /* evita scroll horizontal */
+  }
 
-	.ct{
-		text-align: center;
-		padding-top: 25px;
-		padding-left: 25px;
-	}
+  .ct {
+    text-align: center;
+    padding: 20px 10px;       /* espacio superior e interno */
+  }
 
-  	nav ul {
-    	flex-direction: column;
-    	gap: 10px;
-  	}
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
 
-  	.titulo {
-    	width: 90%;
-    	margin: 0 auto;
-    	left: 0;   /* quita el desplazamiento */
-    	position: relative;
-	}
+  .titulo {
+    width: 95%;
+    margin: 15px auto;        /* centrado con margen */
+    position: relative;
+    left: 0;                  /* asegura que no se pegue */
+  }
 
-  	.cuadro section {
-    	width: 100%;   /* que cada sección ocupe todo el ancho */
-  	}
+  .cuadro {
+    flex-direction: column;   /* se apilan */
+    align-items: center;
+    gap: 15px;
+  }
+
+  .cuadro section {
+    width: 100%;              /* ocupa todo el ancho */
+    margin: 10px auto;
+    padding: 15px;            /* más espacio interno */
+  }
+
+  footer {
+    margin: 20px auto 0;
+    width: 95%;               /* que no quede pegado al borde */
+  }
 }
