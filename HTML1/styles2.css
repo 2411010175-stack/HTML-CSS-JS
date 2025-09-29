@@ -257,12 +257,12 @@ footer:hover {
 @media (max-width: 768px) {
 
 	body{
-		margin-left: 25px;
 		text-align: center;
 		padding-left: 25px;
 	}
 
 	.ct{
+		margin-left: 25px;
 		text-align: center;
 		padding-top: 25px;
 		padding-left: 25px;
