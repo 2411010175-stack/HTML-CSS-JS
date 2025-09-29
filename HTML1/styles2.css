@@ -256,6 +256,11 @@ footer:hover {
 
 @media (max-width: 768px) {
 
+	.ct{
+		padding-top: 25px;
+		padding-left: 25px;
+	}
+
   	nav ul {
     	flex-direction: column;
     	gap: 10px;
