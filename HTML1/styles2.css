@@ -257,7 +257,9 @@ footer:hover {
 @media (max-width: 768px) {
 
 	body{
-		padding-left: 25px auto;
+		margin-left: 25px;
+		text-align: center;
+		padding-left: 25px;
 	}
 
 	.ct{
