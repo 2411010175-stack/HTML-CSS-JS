@@ -9,6 +9,10 @@ header {
 }
 
 
+.header {
+
+}
+
 /* Fondo general */
 body {
   display: grid;
@@ -20,8 +24,8 @@ body {
 }
 
 .flex h2{
-  padding-left: 20px;
-  padding-top: 1%;
+  padding: 0 10px;
+  padding-top: 8px;
   font-size: 27px;
 }
 
@@ -30,6 +34,9 @@ body {
   height: 50px;
 }
 
+header nav .flex{
+  width: 70%;
+}
 
 /* Navbar */
 header nav a {
