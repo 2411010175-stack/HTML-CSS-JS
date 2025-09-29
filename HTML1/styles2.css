@@ -1,5 +1,4 @@
 body { 
-	padding: 30px;
   	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
@@ -248,7 +247,7 @@ footer:hover {
 }
 
 #Ct{
-	margin-right: 50px;
+	padding: 0 auto;
 	align-items: center;
 	text-align: center;
 	padding-bottom: 25px;
