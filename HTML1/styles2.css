@@ -256,13 +256,15 @@ footer:hover {
 @media (max-width: 768px) {
 
 	body{
+		padding-top: 25px;
+		display: grid;
 		text-align: center;
-		padding-left: 25px;
 		width: 60%;
 	}
 
 	.ct{
 		margin-left: 25px;
+		justify-content: center;
 		text-align: center;
 		padding-top: 25px;
 		padding-left: 25px;
@@ -274,7 +276,7 @@ footer:hover {
   	}
 
   	.titulo {
-    	width: 90%;
+    	width: 70%;
     	margin: 0 auto;
     	left: 0;   /* quita el desplazamiento */
     	position: relative;
