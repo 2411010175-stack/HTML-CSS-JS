@@ -1,6 +1,6 @@
 /* Fondo general */
 body {
-  display: grid;
+  display: fixed;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(to bottom, #0f172a, #1e3a8a); /* azul oscuro → indigo */
   color: white;
@@ -9,15 +9,73 @@ body {
   padding-bottom: 0;
 }
 
-header {
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(17, 24, 39, 0.9); /* bg-gray-900/90 */
-  backdrop-filter: blur(6px);
+/*Header*/
+.imagenUNDC{
+  position: relative;
+  height: 50px;
+}
+/*  General   */
+.barraDeControl{
+  background: #0f172a;
+  height: 102px;
+  align-items: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+}
+/*  NombreParteIzquierda   */
+.miNombre{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  padding-left: 15px;
+  padding-top: 5px;
 }
 
+/*  Viñetas  */
+.viñetas{
+  gap: 80px;
+}
+
+.viñetas a{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.viñetas a:hover{
+  transform: scale(1.2);
+  border-top: 2px solid rgb(5, 18, 107); border-bottom: 2px solid rgb(5, 18, 107);
+  background: rgba(255, 255, 255, 0.322);
+}
+
+/*   ContenidoDeDocentes  */
+
+.contenidoGeneral{
+  display: grid;
+  margin: 0;
+  justify-content: center;
+  font-family:'Times New Roman', Times, serif;
+  padding-top: 2%;
+}
+
+.infoDocente{
+  display: flex;
+  height: 140%;
+  width: 100%;
+  margin: 2% auto;
+  animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+  from { width: 0 };
+  to { width: 100% };
+}
+
+.textDocente{
+  width: 70%;
+}
+
+/*
 .mx-auto{
   padding-top: 20px;
   padding-left: 20px;
@@ -28,21 +86,6 @@ header {
   font-family: 'Times New Roman', Times, serif;
 }
 
-/* Navbar */
-header nav a {
-  display: flex;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  padding: 8px 16px;
-  border-radius: 6px;
-  transition: background 0.3s;
-}
-
-header nav a:hover {
-  color: #161351;
-  transform: scale(1.25);
-  background: rgba(255, 255, 255, 0.701);
-}
 
 .h-8{
   position: relative;
@@ -61,27 +104,6 @@ ul li div div h3 {
 }
 
 
-/* Navbar */
-header nav a {
-  position: relative;
-  font-size: 1rem;
-  letter-spacing: 1px;
-  padding: 8px 16px;
-  border-radius: 6px;
-  transition: background 0.3s;
-}
-/* Hero (h1 principal) */
-h1 {
-  font-size: 3rem !important;
-  font-weight: 700 !important;
-  color: #f5f5f5 !important;
-  text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
-}
-
-header .el-dialog{
-  height: 100%;
-  width: 100%;
-}
 
 .bg-gray-900{
   padding-top: 2%;
@@ -121,30 +143,4 @@ header .el-dialog{
 .bg-gray-900 .grid li:hover{
   transform: scale(1.1);
   background-color: rgba(240, 248, 255, 0.096);
-}
-
-@media (max-width: 700px) {
-  header nav a {
-    font-size: 0.9rem;
-    padding: 6px 12px;
-    transform: none; /* quita el efecto de escala en móviles */
-  }
-
-  h1 {
-    font-size: 2rem !important; /* más pequeño para móviles */
-  }
-
-  .bg-gray-900 .grid {
-    grid-template-columns: 1fr; /* que las tarjetas se apilen en columna */
-    gap: 20px;
-  }
-
-  .cuadro3 {
-    left: 0; /* quitar desplazamiento lateral */
-  }
-
-  .flex h2 {
-    font-size: 20px;
-    padding-left: 10px;
-  }
-}
+}*/

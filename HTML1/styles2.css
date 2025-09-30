@@ -258,6 +258,7 @@ footer:hover {
 	body{
 		text-align: center;
 		padding-left: 25px;
+		width: 60%;
 	}
 
 	.ct{
@@ -280,6 +281,6 @@ footer:hover {
 	}
 
   	.cuadro section {
-    	width: 100%;   /* que cada sección ocupe todo el ancho */
+    	width: 50%;   /* que cada sección ocupe todo el ancho */
   	}
 }
