@@ -1,0 +1,158 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo con degradado animado */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(-45deg, #000428, #004e92, #000000, #001f3f);
+    background-size: 400% 400%;
+    animation: moverFondo 12s ease infinite;
+}
+
+/* Animación del fondo */
+@keyframes moverFondo {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 15px;
+    position: relative;
+    width: 95%;
+    top: 15px;
+    left: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #00aaff;
+    border-radius: 8px;
+    color: #00d9ff;
+    z-index: 200;
+    transition: transform 0.3s ease, background 0.3s;
+}
+.menu-toggle:hover {
+    background: rgba(0, 170, 255, 0.2);
+    transform: scale(1.1);
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+
+/* Barra lateral */
+.barra-lateral {
+    position: fixed;
+    top: 0;
+    left: -260px; /* escondida */
+    width: 250px;
+    height: 100%;
+    background: rgba(15, 15, 25, 0.95); /* Distinto al fondo */
+    color: white;
+    padding: 20px;
+    transition: left 0.4s ease;
+    z-index: 150;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.6);
+}
+
+/* Barra lateral activa */
+.barra-lateral.active {
+    left: 0;
+}
+
+/* Título */
+.barra-lateral h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00d9ff;
+}
+
+/* Navegación */
+.barra-lateral nav ul {
+    margin-top: 80px;
+    list-style: none;
+}
+
+.barra-lateral nav ul li {
+    margin: 15px 0;
+}
+
+.barra-lateral nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.barra-lateral nav ul li a:hover {
+    background: #00aaff;
+    transform: translateX(5px);
+}
+
+/* Main */
+main {
+    margin-left: 0;
+    padding: 30px;
+    transition: margin-left 0.4s ease;
+    flex: 1;
+    z-index: 50;
+}
+
+.barra-lateral.active ~ main {
+    margin-left: 260px;
+}
+
+/* Secciones */
+section {
+    margin: 40px 0;
+    padding: 20px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+    animation: fadeIn 1s ease;
+}
+
+section h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    text-shadow: 1px 1px 5px black;
+    color: #00d9ff;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* Footer */
+footer {
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 40px;
+}
+footer a {
+    color: #00d9ff;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}

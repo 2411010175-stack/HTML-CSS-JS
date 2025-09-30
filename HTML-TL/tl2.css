@@ -6,7 +6,6 @@ body {
   color: white;
   margin: 0;
   padding-top: 100px;
-  padding-bottom: 0;
 }
 
 /*Header*/
@@ -58,6 +57,7 @@ body {
   justify-content: center ;
   font-family:'Times New Roman', Times, serif;
   padding: 0 auto;
+  padding-bottom: 50px;
 }
 
 .infoDocente{
@@ -73,8 +73,18 @@ body {
 }
 
 .textDocente{
-  display: flex;
+  display: grid;
+  grid-template-rows: 75px auto;
   width: 100%;
+}
+
+.tituloDocente{
+  height: 50px;;
+  margin-bottom: 0;
+}
+
+.introDocente{
+  margin: 0;
 }
 
 .docentes{ 
@@ -107,6 +117,9 @@ body {
 @media (max-width: 720px){
   .infoDocente{
     display: grid;
+  }
+
+  .textDocente{
   }
 }
 
