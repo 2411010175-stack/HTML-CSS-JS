@@ -1,0 +1,119 @@
+/* Fondo general */
+body {
+  display: grid;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+/*Header*/
+.imagenUNDC{
+  position: relative;
+  height: 50px;
+}
+/*  General   */
+.barraDeControl{
+  background: #0f172a;
+  height: 102px;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+}
+/*  NombreParteIzquierda   */
+.miNombre{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+
+/*  Viñetas  */
+.viñetas{
+  gap: 30px;
+}
+
+.viñetas a{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.viñetas a:hover{
+  transform: scale(1.2);
+  border-top: 2px solid rgb(5, 18, 107); border-bottom: 2px solid rgb(5, 18, 107);
+  background: rgba(255, 255, 255, 0.322);
+}
+
+.flex h2{
+  padding: 0 10px;
+  padding-top: 8px;
+  font-size: 27px;
+}
+
+.h-8 {
+  position: relative;
+  height: 50px;
+}
+
+/* Hero (h1 principal) */
+h1 {
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  color: #f5f5f5 !important;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+}
+
+/* Botón principal */
+.btn-primary {
+  background: linear-gradient(to right, #6366f1, #a855f7);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.bg-gray-900{
+  max-height: 800px;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #a855f7, #6366f1);
+  transform: scale(1.05);
+}
+
+/* Tarjetas */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 700px) {
+  header nav a {
+    display: block;
+    margin: 6px 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+
+  .btn-primary {
+    display: block;
+    width: 100%;
+  }
+}

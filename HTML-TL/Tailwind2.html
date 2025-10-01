@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="tl2.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="barraDeControl absolute inset-x-0 top-0 z-50">
+      <nav aria-label="Global" class="navBarra flex items-center justify-between p-6 lg:px-8">
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img src="../imagen/UNDC_logo[1].png" alt="" class="imagenUNDC h-8 w-auto" />
+          </a>
+          <h2 class="miNombre">Alex Ramos</h2>
+        </div>
+        <div class="flex lg:hidden">
+          <button type="button" command="show-modal" commandfor="mobile-menu"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+              <span class="sr-only">Abrir menu</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                        aria-hidden="true" class="size-6">
+                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                        stroke-linejoin="round" />
+              </svg>
+            </button>
+        </div>
+        <div class="viñetas hidden lg:flex lg:gap-x-12">
+        <a href="../HTML1/index0.html" class="text-sm/6 font-semibold text-white">MAQ</a>
+          <a href="Tailwind.html" class="text-sm/6 font-semibold text-white">INICIO</a>
+          <a href="Tailwind2.html" class="text-sm/6 font-semibold text-white">DOCENTES</a>
+          <a href="Tailwind3.html" class="text-sm/6 font-semibold text-white">ESTUDIANTES</a>
+          <a href="../HTML-JS/portafolio.html" class="text-sm/6 font-semibold text-white">JS</a>
+        </div>
+      </nav>
+
+    
+    <el-dialog>
+      <dialog id="mobile-menu" class="lg:hidden backdrop:bg-black/50">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img src="../imagen/UNDC_logo[1].png" alt="" class="h-8 w-auto" />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-white/10">
+                <div class="space-y-2 py-6">
+                  <a href="../HTML1/index0.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">MAQ</a>
+                  <a href="Tailwind.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">INICIO</a>
+                  <a href="Tailwind2.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">DOCENTES</a>
+                  <a href="Tailwind3.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">ESTUDIANTES</a>
+                  <a href="../HTML-JS/portafolio.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">JS</a>
+                </div>
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+  </header>
+
+  
+  <div class="contenidoGeneral bg-gray-900">
+    <div class="infoDocente mx-auto flex max-w-7xl gap-5 px-6 lg:px-8 xl:grid-cols-2">
+      <div class="textDocente max-w-xl">
+        <h2 class="tituloDocente text-3xl font-semibold tracking-tight text-pretty text-white sm:text-4xl">DOCENTES</h2>
+        <p class="introDocente mt-6 text-lg/8 text-gray-400">Los profesores de la Universidad Nacional de Cañete se caracterizan por
+             su sólida formación académica, amplia experiencia profesional y compromiso con la excelencia educativa. 
+             Cada docente aporta sus conocimientos especializados en diversas áreas, fomentando la investigación, 
+             la innovación y el pensamiento crítico en los estudiantes. Su labor no solo se centra en la enseñanza, 
+             sino también en el acompañamiento y orientación para el desarrollo personal y profesional de los futuros 
+             líderes de la región y del país.</p>
+      </div>
+      <ul role="list" class="docentes grid">
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img src="../imagen/IMG_20241030_224403-removebg-preview.png" alt="" class="imagen size-16 rounded-full outline-1 -outline-offset-1 outline-white/10" />
+            <div>
+              <h3 class="text-base/7 font-semibold tracking-tight text-white">Alex Ramos Huapaya</h3>
+              <p class="text-sm/6 font-semibold text-indigo-400">Docente</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center gap-x-6">
+            <img src="../imagen/IMG_20241030_224403-removebg-preview.png" alt="" class="imagen size-16 rounded-full outline-1 -outline-offset-1 outline-white/10" />
+            <div>
+              <h3 class="text-base/7 font-semibold tracking-tight text-white">Alex Ramos Huapaya</h3>
+              <p class="text-sm/6 font-semibold text-indigo-400">Docente</p>
+            </div>
+          </div>
+        </li>
+        <li class="cuadro3">
+          <div class="flex items-center gap-x-6">
+            <img src="../imagen/IMG_20241030_224403-removebg-preview.png" alt="" class="imagen size-16 rounded-full outline-1 -outline-offset-1 outline-white/10" />
+            <div>
+              <h3 class="text-base/7 font-semibold tracking-tight text-white">Alex Fabrizzio Ramos</h3>
+              <p class="text-sm/6 font-semibold text-indigo-400">Docente</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
