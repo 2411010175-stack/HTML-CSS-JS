@@ -59,9 +59,15 @@ body {
 /*  CuadrosEstudiantes  */
 
 .estudiantes article{
+
   padding: 15px;
   border-radius: 15px;
   background: rgba(255, 255, 255, 0.089);
+}
+
+.estudiantes article .txtEstudiante{
+  display: flex;
+  position: relative;
 }
 
 .estudiantes article:hover{
@@ -70,7 +76,7 @@ body {
 
 .estudianteNyF{
   padding-top: 5px;
-  margin: 10px;
+  margin: 0;
   margin-left: 0;
 }
 
@@ -84,6 +90,7 @@ body {
 }
 
 .textoEstudiante{
+  display: flex;
   margin-top: 2%;
   height: 95%;
   margin-bottom: 5%;
