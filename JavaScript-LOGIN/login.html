@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>EmailJS</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="cuadroFm">
+        
+        <h2>Formulario </h2>
+        <form class="textos" onsubmit="enviarCorreo(event)">
+
+            <div class="inputs">
+                <div>
+                    <label>Nombre:</label><br>
+                    <input type="text" id="nombre" required><br><br>
+                </div>
+                <div>
+                    <label>Email:</label><br>
+                    <input type="email" id="email" required><br><br>
+                </div>
+                <div>
+                    <label>Mensaje:</label><br>
+                    <textarea id="mensaje" required></textarea><br><br>
+                </div>
+            </div>
+            
+                
+            <button type="submit">Enviar Correo</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script>
+        // Inicializar EmailJS con tu Public Key
+        (function(){emailjs.init("nLQ07wf4e9WoeTkNO");})();
+        function enviarCorreo(e) {
+        e.preventDefault(); // evitar recarga del form
+        emailjs.send( "service_7xtnreo" , "template_4o8g0e9" , {
+        /*emailjs.send("service_xxx", "template_xxx", {*/
+        from_name: document.getElementById("nombre").value,
+        from_email: document.getElementById("email").value,
+        message: document.getElementById("mensaje").value
+        })
+        .then((res) => {
+        alert("Correo enviado correctamente!");
+        console.log("Respuesta:", res);
+        })
+        .catch((err) => {
+        alert("Error al enviar el correo.");
+
+        console.error("Error:", err);
+        });
+        }
+    </script>
+</body>
+</html>

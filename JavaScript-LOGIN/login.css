@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: rgb(9, 9, 30);
+    margin: 0;
+    animation: cambiarColorBody 15s infinite linear;
+}
+
+@keyframes cambiarColorBody {
+  0% {
+    background-color: #110440; /* Rojo al inicio */
+  }
+  50% {
+    background-color: #070d61; /* Verde en el medio */
+  }
+  100% {
+    background-color: #000000; /* Azul al final */
+  }
+}
+
+.cuadroFm{
+    height: auto;
+    width: 450px;
+    background: white;
+    padding: 20px 50px;
+    padding-top: 0px;
+    border-radius: 30px;
+    border: 2px solid black;
+    box-shadow: 0 0 50px 10px rgb(21, 34, 133);
+    margin: auto;
+}
+
+textarea{
+    height: 80px;
+}
+
+input,textarea{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+.textos{
+    display: grid;
+    gap: 4px;
+}
+
+.textos label{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 1000;
+    font-size: 20px;
+}
+
+button{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: aliceblue;
+    border-radius: 8px;
+    background: rgb(5, 5, 55);
+    height: 30px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background: rgba(5, 5, 55, 0.719);
+}
+
+h2{
+    text-shadow: 0 0 5px;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
